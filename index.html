@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>▶ 网易云音乐</title>
+		<link rel="stylesheet" href="css/music_font/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/myCss.css">
+		<script src="js/jquery-3.4.1.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="top">
+			<div class="title">
+				<p align="center">网易云音乐</p>
+			</div> <!-- to be continue -->
+			<div class="bar"></div> <!-- to be continue -->
+		</div>
+
+
+		<div class="main">
+			<div class="section">
+				<div class="music">
+					<div class="donghua">
+						<div class="cd_outer">
+							<div class="cd">
+								<img class="img" id="pic" src="src/pic/001.jpg">
+							</div>
+						</div>
+					</div>
+					<!-- <div class="line_donghua"></div> -->
+					<div class="lyric">
+						<ul id="lrclist" style="transform: translateY(250px);">
+							<!-- 保证歌词在正中间 -->
+						</ul>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="musicL">
+						<i class="iconfont icon-shangyishou" id="top"></i>
+						<span class="play" id="play">
+							<i class="iconfont icon-bofang"></i>
+						</span>
+						<i class="iconfont icon-xiayishou" id="down"></i>
+					</div>
+					<div class="loadL">
+						<span class="start_time" id="start_time">00:00</span>
+						<div class="load" id="load">
+							<div class="circle" id="circle">
+								<div class="round" id="round">
+								</div>
+							</div>
+						</div>
+						<span class="total_time" id="total_time">00:00</span>
+					</div>
+					<div class="soundL">
+						<i class="iconfont icon-yinliang" id="yinliang"></i>
+					</div>
+					<div class="sound" id="sound">
+						<div class="circle_sound" id="circle_sound">
+							<div class="round_sound" id="round_sound"></div>
+						</div>
+					</div>
+				</div>
+				<div class="talk"></div>
+			</div>
+
+			<div class="line"></div>
+			<audio id="audio"></audio> <!-- 虽然这里没有用“<audio src="xxx"></audio>”，但是也需要这个标签，不然不能播放 -->
+
+			<div class="nav">
+				<h3 align="center">相似的音乐</h3>
+				<div class="music_list">
+					<ul id="ul">
+						<li>阿肆,林宥嘉 - 致姗姗来迟的...</li>
+						<li>雷雨心 - 记·念(live)</li>
+						<li>小周 - Love home</li>
+						<li>几米 - 拥有Masbfca (广告...</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+		<hr size="1" color="#CCCCCC">
+		<div class="foot">
+			<p align="center"> 网易公司版权所有©1997-2019杭州乐读科技有限公司运营：浙网文[2018]3506-263号</br></br>
+				违法和不良信息举报电话：0571-89853516 举报邮箱：ncm5990@163.com </br> </p>
+		</div>
+		
+		<script src="js/myJS.js"></script>
+		
+	</body>
+</html>
