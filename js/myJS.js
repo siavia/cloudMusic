@@ -15,7 +15,7 @@ var oTotal = document.getElementsByClassName("total_time")[0]
 			var oDown = document.getElementById("down")
 			var num = 0
 			var arr = ["src/song/阿肆,林宥嘉 - 致姗姗来迟的你.mp3", "src/song/雷雨心 - 记·念(live).mp3",
-				"src/song/小周 - Love home.mp3", "src/song/几米 - 拥有Masbfca (广告配乐完整版).mp3"
+				"src/song/张宇桦 - 优美的小调(钢琴曲).mp3", "src/song/几米 - 拥有Masbfca (广告配乐完整版).mp3"
 			]
 			var arr_pic = ["src/pic/001.png", "src/pic/002.png", "src/pic/003.png", "src/pic/004.png"]
 			oAudio.src = arr[num]
