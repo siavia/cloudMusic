@@ -1,0 +1,288 @@
+body {
+				margin: 0;
+				padding: 0;
+				background-color: #EEEEEE;
+			}
+
+			.icon {
+				font-size: 30px;
+				/*  //////////////////////////////////////////////////// */
+				vertical-align: 0;
+				overflow: hidden;
+			}
+
+			.img {
+				/*animation (动画) :绑定选择器, 4s完成动画 linear(匀速) infinite(循环) */
+				animation: que 20s linear infinite;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				width: auto;
+				animation-play-state: paused;
+			}
+
+			/*通过@keyframes规则,能够创建动画 , que 定义动画的名称 可自己定义*/
+			@keyframes que {
+
+				/*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+				0% {
+					/*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			/* 结构框架*/
+			.top {
+				height: 103px;
+				background-color: #C20C0C;
+			}
+
+			/*69 + 34*/
+
+			.title {
+				height: 69px;
+				background-color: #242424;
+				color: #FFFFFF;
+				font-size: 30px;
+				line-height: 69px;
+			}
+
+			.bar {
+				height: 34px;
+			}
+
+			.main {
+				width: 1000px;
+				height: 500px;
+				background-color: aquamarine;
+				margin: 0 auto;
+			}
+
+			.section {
+				width: 749px;
+				height: 500px;
+				background-color: #FFFFFF;
+				float: left;
+			}
+
+			.music {
+				width: 749px;
+				height: 460px;
+				background-color: #8A2BE2;
+			}
+
+			.progress {
+				width: 749px;
+				height: 40px;
+				background-color: #DDDDDD;
+				font-size: 16px;
+				line-height: 40px;
+			}
+
+			.talk {
+				width: 749px;
+				height: 0px;
+				background-color: #FFFFFF;
+			}
+
+			.donghua {
+				width: 250px;
+				height: 460px;
+				background-color: #FFFFFF;
+				float: left;
+			}
+
+			.cd_outer {
+				width: 200px;
+				height: 200px;
+				background-color: #000000;
+				margin: 25px;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+
+			.cd {
+				width: 150px;
+				height: 150px;
+				margin: 25px;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+
+			.cd img {
+				border-radius: 50%
+			}
+
+			.line_donghua {
+				width: 1px;
+				height: 460px;
+				background-color: #CCCCCC;
+				float: left;
+			}
+
+			.lyric {
+				width: 469px;
+				height: 460px;
+				background-color: #FFFFFF;
+				color: #404040;
+				float: left;
+				font-size: 14px;
+				padding-left: 30px;
+				overflow: hidden;
+			}
+
+			.line {
+				width: 1px;
+				height: 500px;
+				background-color: #CCCCCC;
+				float: left;
+			}
+
+			.nav {
+				width: 250px;
+				height: 500px;
+				background-color: #FFFFFF;
+				float: right;
+			}
+
+			.music_list {
+				font-size: 14px;
+				width: 250px;
+				background: #DDDDDD;
+				color: #404040;
+				margin: 0 auto;
+			}
+
+			.foot {
+				width: 800px;
+				height: 70px;
+				background-color: #EEEEEE;
+				margin: 0 auto;
+				font-size: 14px;
+			}
+
+			/*播放器*/
+			.musicL {
+				float: left;
+				margin: auto o;
+				padding-left: 150px;
+				padding-right: 5px;
+			}
+
+			.loadL {
+				float: left;
+				margin: auto o;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+
+			.load {
+				display: inline-block;
+				width: 200px;
+				height: 5px;
+				/* 	padding: 0,50px; */
+				background: #FFECEC;
+				cursor: pointer;
+				/* 改变光标样式为"指" */
+				position: relative;
+				/* 相对位置 */
+				top: -2px;
+			}
+
+			.circle {
+				width: 0px;
+				height: 5px;
+				background: red;
+				position: relative;
+				left: 0;
+				top: 0;
+			}
+
+			.round {
+				position: absolute;
+				/* 绝对位置 */
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: lightsalmon;
+				left: 0px;
+				top: -3px;
+			}
+
+			.sound {
+				display: inline-block;
+				width: 50px;
+				height: 5px;
+				background: #FFECEC;
+				cursor: pointer;
+				/* 改变光标样式为"指" */
+				position: relative;
+				/* 相对位置 */
+				top: -2px;
+			}
+
+			.soundL {
+				float: left;
+				margin: auto o;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+
+			.circle_sound {
+				width: 0px;
+				height: 5px;
+				background: red;
+				position: relative;
+				left: 0;
+				top: 0;
+			}
+
+			.round_sound {
+				position: absolute;
+				/* 绝对位置 */
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: lightsalmon;
+				left: 25px;
+				top: -3px;
+			}
+
+			/* 歌词 */
+			.lyric span {
+				color: #DDDDDD;
+			}
+
+			.lyric ul {
+				transition-duration: 600ms;
+			}
+
+			.lyric ul,
+			li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.lyric li.on {
+				color: red;
+			}
+
+			/* 音乐列表 */
+			.music_list li {
+				height: 40px;
+				border-bottom: 1px solid #ccc;
+				line-height: 40px;
+				/*告诉一行有多高，这样方便文字自己在一列中上下居中*/
+				cursor: pointer;
+			}
+
+			.music_list li:hover {
+				background: lightsalmon;
+				/* 鼠标移上去变粉色 */
+			}
